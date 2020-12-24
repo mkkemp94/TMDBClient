@@ -1,8 +1,8 @@
 package com.mkemp.tmdbclient.data.api
 
-import com.mkemp.tmdbclient.data.ArtistList
-import com.mkemp.tmdbclient.data.MovieList
-import com.mkemp.tmdbclient.data.TVShowList
+import com.mkemp.tmdbclient.data.model.artist.ArtistList
+import com.mkemp.tmdbclient.data.model.movie.MovieList
+import com.mkemp.tmdbclient.data.model.tvshow.TVShowList
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

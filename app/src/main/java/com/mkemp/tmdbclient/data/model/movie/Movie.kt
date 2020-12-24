@@ -1,10 +1,15 @@
-package com.mkemp.tmdbclient.data
+package com.mkemp.tmdbclient.data.model.movie
 
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
+@Entity(tableName = "popular_movies")
 data class Movie(
-    @SerializedName("id")
+
+    @PrimaryKey // for room
+    @SerializedName("id") // for retrofit
     val id: Int,
     @SerializedName("overview")
     val overview: String,
@@ -14,4 +19,5 @@ data class Movie(
     val releaseDate: String,
     @SerializedName("title")
     val title: String
+
 )
