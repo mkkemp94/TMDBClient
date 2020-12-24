@@ -7,8 +7,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class MovieLocalDataSourceImpl(private val movieDao: MovieDao) :
-    MovieLocalDataSource {
+class MovieLocalDataSourceImpl(private val movieDao: MovieDao) : MovieLocalDataSource {
 
     // Room automatically executes this on a background thread
     override suspend fun getMoviesFromDB(): List<Movie> = movieDao.getMovies()

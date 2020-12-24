@@ -6,8 +6,7 @@ import com.mkemp.tmdbclient.data.repository.movie.datasource.MovieCacheDataSourc
 /**
  * This class uses a very basic caching mechanism
  */
-class MovieCacheDataSourceImpl :
-    MovieCacheDataSource {
+class MovieCacheDataSourceImpl : MovieCacheDataSource {
 
     private var movieList = ArrayList<Movie>()
 

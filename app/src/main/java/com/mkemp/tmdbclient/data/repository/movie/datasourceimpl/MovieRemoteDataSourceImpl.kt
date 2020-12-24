@@ -6,8 +6,7 @@ import com.mkemp.tmdbclient.data.repository.movie.datasource.MovieRemoteDataSour
 import retrofit2.Response
 
 class MovieRemoteDataSourceImpl(private val tmdbService: TMDBService,
-                                private val apiKey: String) :
-    MovieRemoteDataSource {
+                                private val apiKey: String) : MovieRemoteDataSource {
 
     override suspend fun getMovies(): Response<MovieList> {
         return tmdbService.getPopularMovies(apiKey)
