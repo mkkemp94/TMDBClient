@@ -30,6 +30,11 @@ android {
     dataBinding {
         enabled = true
     }
+
+    // For Android Studio 4.0
+    buildFeatures {
+        dataBinding = true
+    }
 }
 
 dependencies {
